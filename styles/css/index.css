@@ -1,0 +1,1017 @@
+/*------------------------------Шрифты*/
+@import url('../../font/Gilroy/fonts.css');
+
+/*------------------------------Основные стили*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 0;
+}
+
+.page {
+    max-width: 1920px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.92);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*------------------------------Блок Header*/
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/Bck.png) no-repeat center;
+    padding: 40px 15px 0;
+
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-list {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 0;
+}
+
+.burger-menu-close {
+    display: none;
+}
+
+.menu-list-link {
+    font-size: 16px;
+    font-family: 'Gilroy-Regular', sans-serif;
+    color: rgb(255, 255, 255);
+    transition: all .5s ease;
+}
+
+.menu-list-link:hover {
+    border-bottom: 1px solid rgb(188, 18, 18);
+    text-shadow: 0 0 #ffffff;
+}
+
+.menu-list-link.number {
+    margin-left: 120px;
+}
+
+.button {
+    font-size: 16px;
+    font-family: "Gilroy-Bold", sans-serif;
+    color: rgb(188, 18, 18);
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #bc1212;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.button.header-button:hover {
+    background-color: rgb(188, 18, 18);
+    color: #ffffff;
+}
+
+.button.header-button img {
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+/*------------------------------Блок Promo*/
+.promo {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/Bck.png) no-repeat center;
+    position: relative;
+    padding: 80px 15px 80px;
+    z-index: 1;
+}
+
+.promo .container {
+    display: flex;
+}
+
+.promo-info {
+    max-width: 556px;
+}
+
+.promo-info-title {
+    font-size: 50px;
+    font-family: "Cambria-Bold", sans-serif;
+    line-height: 1.14;
+    color: rgb(255, 255, 255);
+    padding-top: 60px;
+}
+
+.promo-info-title span {
+    color: rgb(188, 18, 18);
+}
+
+.promo-info-text {
+    font-size: 20px;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    padding-top: 75px;
+    max-width: 545px;
+}
+
+.promo-info-text span {
+    color: rgb(188, 18, 18);
+}
+
+.btn {
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: "Gilroy-Bold", sans-serif;
+    background-image: -moz-linear-gradient(90deg, rgb(90, 4, 4) 0%, rgb(188, 18, 18) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(90, 4, 4) 0%, rgb(188, 18, 18) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(90, 4, 4) 0%, rgb(188, 18, 18) 100%);
+    color: rgb(255, 255, 255);
+    padding: 20px 52px;
+    border: none;
+    transition: all .5s ease;
+    max-width: 280px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 1px 20px 1px red;
+    color: #ffffff;
+}
+
+.btn.promo-info-btn {
+    margin-top: 70px;
+}
+
+.promo-image img {
+    z-index: 2;
+    width: 100%;
+    max-width: 500px;
+}
+
+.promo-image::after {
+    content: '';
+    position: absolute;
+    top: 26%;
+    bottom: 46%;
+    left: 67%;
+    right: 0;
+    background-image: url(../../images/Club.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.promo-image::before {
+    content: '';
+    position: absolute;
+    top: 69%;
+    bottom: 0;
+    left: 4%;
+    right: 0;
+    background-image: url("../../images/Barber.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.promo-image img {
+}
+
+/*------------------------------Блок About*/
+.about {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/Bck.png) no-repeat center;
+    padding: 212px 15px 0;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+}
+
+.about-info {
+    max-width: 481px;
+}
+
+.about-info-title {
+    font-size: 40px;
+    font-family: "Cambria-Bold", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.about-info-text {
+    padding-top: 40px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.467;
+}
+
+.about-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 75px;
+}
+
+.about-card {
+    display: flex;
+    max-width: 305px;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.about-card-text {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.438;
+}
+
+/*------------------------------Блок Price*/
+.price {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/Bck.png) no-repeat center;
+    padding-top: 230px;
+    padding-bottom: 98px;
+}
+
+.price-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.price .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-info-title {
+    font-size: 40px;
+    font-family: "Cambria-Bold", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.price-list {
+    display: flex;
+    gap: 40px;
+    padding-left: 0;
+    padding-top: 70px;
+    margin-bottom: 0;
+}
+
+.price-list-link {
+    color: white;
+    transition: all .5s ease;
+}
+
+.price-list-link:hover {
+    border-bottom: 1px solid rgb(188, 18, 18);
+    text-shadow: 0 0 #ffffff;
+
+}
+
+.list-content {
+    display: flex;
+    padding-top: 60px;
+}
+
+.price-subtitle {
+    margin-right: 18px;
+}
+
+.price-subtitle-item {
+    padding-bottom: 40px;
+    font-size: 16px;
+    font-family: "Gilroy-Bold", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+}
+
+.price-services {
+    border-left: 1px solid #383838;
+    border-right: 1px solid #383838;
+    max-width: 293px;
+}
+
+.price-services-item {
+    padding-bottom: 30px;
+    margin: 0 28px 0 37px;
+    font-size: 14px;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    max-width: 200px;
+}
+
+.price-prices {
+    margin-left: 25px;
+}
+
+.price-prices-item {
+    padding-bottom: 40px;
+    font-size: 16px;
+    font-family: "Gilroy-Bold", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1;
+}
+
+.price-button {
+    margin: 38px auto 0 auto;
+}
+
+.price-image {
+    padding-top: 130px;
+}
+
+.list-content-shaving, .list-content-complex, .list-content-additionally {
+    display: none;
+    padding-top: 60px;
+}
+
+.list-content, .list-content-shaving, .list-content-complex, .list-content-additionally {
+    height: 380px;
+}
+
+.list-content-shaving .price-services-item {
+    padding-bottom: 42px;
+}
+
+.list-content-complex .price-subtitle-item {
+    max-width: 190px;
+}
+
+.list-content-complex .price-services-item {
+    padding-bottom: 35px;
+}
+
+.list-content-additionally .price-subtitle, .list-content-complex .price-subtitle, .list-content-shaving .price-subtitle {
+    max-width: 169px;
+}
+
+.list-content-additionally .price-subtitle-item {
+    padding-bottom: 55px;
+}
+
+.list-content-additionally .price-prices-item {
+    padding-bottom: 72px;
+}
+
+/*------------------------------Блок Master*/
+.master {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/Bck.png) no-repeat center;
+    padding-bottom: 75px;
+}
+
+.master-title {
+    font-size: 40px;
+    font-family: "Cambria-Bold", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 84px;
+}
+
+.master-text {
+    font-size: 15px;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    max-width: 642px;
+    margin: 0 auto;
+    padding-top: 41px;
+}
+
+.carousel-card-item {
+    position: relative;
+}
+
+.carousel-card-item-title {
+    font-size: 18px;
+    font-family: "Gilroy-Medium", sans-serif;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 4%;
+    left: 20%;
+}
+
+.carousel-card-item-btn {
+    font-size: 20px;
+    font-family: "Gilroy-Bold", sans-serif;
+    color: rgb(188, 18, 18);
+    position: absolute;
+    bottom: 3%;
+    right: 18%;
+    border: 0;
+    background: transparent;
+    transition: all .5s ease;
+}
+
+.carousel-card-item-btn:hover {
+    color: white;
+}
+
+
+.fa-solid.fa-arrow-right-long {
+    padding-left: 9px;
+}
+
+/*------------------------------Slider*/
+.carousel-cards {
+    padding-top: 27px;
+}
+
+.slick-slide img {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.slick-arrow, .slick-arrow:focus {
+    background: #494949;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.slick-arrow.slick-prev {
+    transform: rotate(-180deg);
+}
+
+.slick-prev:before, .slick-next:before {
+    display: block;
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    width: 30px;
+    height: 20px;
+    color: black;
+}
+
+.slick-prev, .slick-next {
+    transition: all .5s ease;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-image: -moz-linear-gradient(90deg, rgb(90, 4, 4) 0%, rgb(188, 18, 18) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(90, 4, 4) 0%, rgb(188, 18, 18) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(90, 4, 4) 0%, rgb(188, 18, 18) 100%);
+    box-shadow: 0 1px 20px 1px red;
+}
+
+.slick-prev:hover:before, .slick-next:hover:before {
+    color: white;
+}
+
+.slick-dots {
+    padding-top: 25px;
+    position: relative;
+    bottom: 0;
+}
+
+.slick-dots li {
+    padding: 0;
+    background: transparent;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid red;
+}
+
+.slick-dots li.slick-active {
+    padding: 0;
+    background: red;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+/*------------------------------Блок Certificate*/
+.certificate {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/Bck.png) no-repeat center;
+}
+
+.certificate .container {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 86px;
+}
+
+.certificate-info {
+    align-self: center;
+    max-width: 592px;
+}
+
+.certificate-info-title {
+    font-size: 40px;
+    font-family: "Cambria-Bold", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 0.75;
+    text-align: center;
+}
+
+.certificate-info-text {
+    display: flex;
+    column-gap: 13px;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.certificate-info-number {
+    font-size: 70px;
+    font-family: "Cambria-Bold", sans-serif;
+    color: rgb(188, 18, 18);
+    line-height: 0.5;
+    margin-bottom: 0;
+}
+
+.certificate-info-letters {
+    font-size: 18px;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.278;
+    margin-bottom: 0;
+}
+
+.certificate-info-btn {
+    margin: 40px auto 0 auto;
+    text-align: center;
+    display: block;
+}
+
+/*------------------------------Блок Social*/
+
+.social {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/Bck.png) no-repeat center;
+}
+
+.social .container {
+    padding-top: 104px;
+    padding-bottom: 157px;
+}
+
+.social-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-header-title {
+    font-size: 40px;
+    font-family: "Cambria-Bold", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+}
+
+.social-icon-text {
+    font-size: 20px;
+    font-family: "Gilroy-Medium", sans-serif;
+    color: rgb(188, 18, 18);
+    line-height: 1.25;
+    margin-bottom: 0;
+    margin-left: 9px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 32px;
+}
+
+.social-carousel-cards {
+    padding-top: 70px;
+    max-width: 958px;
+    margin: 0 auto;
+}
+
+.social-carousel-image:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*------------------------------Блок Contacts*/
+
+.contacts {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/Bck.png) no-repeat center;
+}
+
+.contacts .container {
+    padding-top: 63px;
+    padding-bottom: 45px;
+    position: relative;
+}
+
+.contacts-title {
+    font-size: 40px;
+    font-family: "Cambria-Bold", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.contacts-content {
+    padding-top: 50px;
+}
+
+.contacts-content-card {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(18, 18, 18);
+    position: absolute;
+    padding: 30px 0;
+    z-index: 1;
+}
+
+.contacts-content-card-address {
+    margin-bottom: 0;
+    font-size: 15px;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: rgb(212, 208, 204);
+    line-height: 1.667;
+    padding-top: 41px;
+}
+
+.contacts-content-card-address span {
+    font-size: 16px;
+    font-family: "Gilroy-Bold", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.313;
+    padding-top: 12px;
+}
+
+.contacts-content-card-time {
+    margin-bottom: 0;
+    font-size: 15px;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: rgb(212, 208, 204);
+    line-height: 1.667;
+    display: flex;
+    flex-direction: column;
+    padding-top: 29px;
+}
+
+.contacts-content-card-time span {
+    font-size: 16px;
+    font-family: "Gilroy-Bold", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.313;
+    padding-top: 13px;
+}
+
+.contacts-content-card-social {
+    display: flex;
+    justify-content: center;
+    padding-top: 39px;
+    gap: 22px;
+}
+
+.contacts-content-card-social img {
+    transition: all .5s ease;
+}
+
+.contacts-content-card-social img:hover {
+    opacity: .1;
+}
+
+.contacts-content-card-social img {
+    cursor: pointer;
+}
+
+.contacts-content-card-link {
+    font-size: 18px;
+    font-family: "Gilroy-Bold", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.389;
+    padding-top: 40px;
+}
+
+.contacts-content-card-btn {
+    max-width: 220px;
+    align-self: center;
+    margin-top: 19px;
+}
+
+.contacts-content-card-btn:hover {
+    background-color: rgb(188, 18, 18);
+    color: #ffffff;
+}
+
+.contacts-content-card-btn img {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.contacts-map {
+    filter: invert(1) grayscale(1);
+}
+
+
+/*------------------------------Блок Footer*/
+
+.footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/Bck.png) no-repeat center;
+}
+
+.footer .container {
+    padding: 45px 0;
+}
+
+.footer-text {
+    margin-bottom: 0;
+    font-size: 12px;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: rgb(102, 101, 100);
+    line-height: 2.083;
+    margin-left: 370px;
+}
+
+/*------------------------------Блок Popup*/
+
+.popup.order {
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 3;
+    background: #000000d4;
+}
+
+.popup.order-container {
+    max-width: 1110px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/Bck.png) no-repeat center;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    margin: 200px auto 0;
+    box-shadow: 0 1px 20px 1px white;
+}
+
+.order-container-image-razor {
+    position: absolute;
+    top: -15%;
+    right: 3%;
+}
+
+.order-title {
+    font-size: 40px;
+    font-family: "Cambria-Bold", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    text-align: center;
+    padding-top: 55px;
+}
+
+.order-text {
+    font-size: 18px;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.389;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.popup-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 30px;
+    /*justify-content: center;*/
+    padding-top: 28px;
+}
+
+.order-btn {
+    margin: 34px auto 0;
+    display: block;
+}
+
+.order-container-image img {
+    position: relative;
+    top: -100px;
+    left: -100px;
+}
+
+.input-form {
+    font-size: 15px;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
+    padding: 26px 64px 24px 22px;
+    max-height: 60px;
+    background: #333232;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.popup.order-close-btn {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.input-form::placeholder {
+    font-size: 15px;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
+}
+
+/*------------------------------Блок Popup-2*/
+.popup.call-order {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 4;
+    background: #000000d4;
+}
+
+.call-order-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/Bck.png) no-repeat center;
+    position: relative;
+    max-width: 490px;
+    margin: 150px auto 0;
+    box-shadow: 0 1px 20px 1px white;
+}
+
+.call-container-info {
+    position: relative;
+    padding: 70px 77px;
+}
+
+.call-order-title {
+    font-size: 30px;
+    font-family: "Cambria-Bold", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 0.833;
+    text-align: center;
+}
+
+.call-order-text {
+    font-size: 15px;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
+    padding-top: 26px;
+    text-align: center;
+}
+
+.popup-call-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 29px;
+    row-gap: 27px;
+}
+
+.call-close-btn {
+    margin-top: 30px;
+}
+
+.call-close-btn {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.call-order-container-image {
+    position: absolute;
+    top: -40px;
+    left: -30px;
+}
+
+.popup-call-form .input-form {
+    width: 257px;
+    margin: 0 auto;
+}
+
+
+/*------------------------Popup-3*/
+
+.popup.discount {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 4;
+    background: #000000d4;
+}
+
+.discount-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/Bck.png) no-repeat center;
+    position: relative;
+    max-width: 490px;
+    margin: 200px auto 0;
+}
+
+.discount-container-image {
+    position: absolute;
+    top: -40px;
+    left: -30px;
+}
+
+.discount-container-info {
+    position: relative;
+    padding: 35px 20px;
+}
+
+.discount-container-title {
+    font-size: 26px;
+    font-family: "Cambria-Bold", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 0.833;
+    text-align: center;
+}
+
+.discount-btn {
+    margin: 30px auto 0;
+    display: block;
+}
+
+.popup-form .error-input {
+    color: red;
+    margin-top: 5px;
+    font-size: 20px;
+    display: none;
+    transition: all .5s ease;
+}
+
+.popup-call-form .error-input {
+    color: red;
+    font-size: 20px;
+    display: none;
+    transition: all .5s ease;
+    text-align: center;
+}
+
+.popup-form .req:invalid {
+    border: 2px solid red;
+}
+
+.popup-form .req:valid {
+    border: 2px solid white;
+}
+
+.popup-call-form .req:invalid {
+    border: 2px solid red;
+}
+
+.popup-call-form .req:valid {
+    border: 2px solid white;
+}
+
+
+/*Меню Бургер*/
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.burger-menu div {
+    border-bottom: 2px solid white;
+    width: 20px;
+    border-radius: 5px;
+}
